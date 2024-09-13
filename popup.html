@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mainHeading">Password <span>Generator</span></h1>
+        <div>
+            <p for="length">Length (6-16):</p>
+            <label class="slider">
+                <input type="range" id="length" name="length" class="level" min="6" max="16" value="12">
+            </label>
+            <p id="lengthValue">12</p>
+        </div>
+
+        <ul class="options">
+            <li>
+                <label class="checkbox__label" for="uppercase">
+                    <span class="checkbox__container">
+                        <input class="checkbox" id="uppercase" type="checkbox" checked />
+
+                        <span class="checkbox__label--text">Include Uppercase Letters</span>
+                    </span>
+                </label>
+            </li>
+            <li>
+                <label class="checkbox__label" for="lowercase">
+                    <span class="checkbox__container">
+                        <input class="checkbox" id="lowercase" type="checkbox" checked />
+
+                        <span class="checkbox__label--text">Include Lowercase Letters</span>
+                    </span>
+                </label>
+            </li>
+            <li>
+                <label class="checkbox__label" for="numbers">
+                    <span class="checkbox__container">
+                        <input class="checkbox" id="numbers" type="checkbox" checked />
+
+                        <span class="checkbox__label--text">Include Numbers</span>
+                    </span>
+                </label>
+            </li>
+            <li>
+                <label class="checkbox__label" for="symbols">
+                    <span class="checkbox__container">
+                        <input class="checkbox" id="symbols" type="checkbox" checked />
+
+                        <span class="checkbox__label--text">Include Symbols</span>
+                    </span>
+                </label>
+            </li>
+        </ul>
+
+
+        <div id="passwordDisplay">***********</div>
+        <button id="generate">Generate Password</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
